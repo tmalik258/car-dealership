@@ -83,6 +83,16 @@ header {
 	color: #fff;
 }
 
+@media screen and (max-width: 1250px) {
+	.navbar .nav-menu {
+		gap: .2em;
+	}
+	.navbar .nav-btns button {
+	padding-inline: 10px;
+
+	}
+}
+
 /*--------------- Hero Background ---------------*/
 .hero-bg-img,
 .hero-bg-cloud-img {

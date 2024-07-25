@@ -101,6 +101,22 @@ body {
 	}
 }
 
+@media screen and (max-width: 992px) {
+	.promotion-banner .promotion-banner-body {
+		grid-template-columns: 1fr;
+	}
+
+	.promotion-banner .promotion-banner-body .promotion-banner-list {
+		padding-right: 3em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.promotion-banner .promotion-banner-body .promotion-banner-img {
+		display: none;
+	}
+}
+
 /* ------------------------		Categories	---------------------------- */
 
 .categories {
@@ -121,9 +137,9 @@ body {
 
 .info-banner {
 	display: flex;
-	height: 428.76px;
-	padding: 5em;
+	padding-inline: 3%;
 	gap: 2em;
+	margin-bottom: 10em;
 }
 
 .info-banner > div {
@@ -159,6 +175,11 @@ body {
 	font-size: .85em;
 	font-weight: 200;
 	line-height: 1.9em;
+	overflow: hidden;
+	line-clamp: 5;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
 }
 
 .info-banner .info-banner-card-1 > div:nth-of-type(2) {
@@ -175,6 +196,11 @@ body {
 	font-size: .8em;
 	font-weight: 200;
 	line-height: 1.4em;
+	overflow: hidden;
+	line-clamp: 5;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
 }
 
 .info-banner .info-banner-card-1::after {
@@ -269,10 +295,36 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: 0 -2em;
 	opacity: 0.5;
 	filter: blur(0.3px);
 	z-index: -1;
+}
+
+@media screen and (max-width: 1250px) {
+	.info-banner .info-banner-card-1 > div {
+		width: 80%;
+	}
+
+	.info-banner .info-banner-card-1 > div:is(:nth-of-type(1), :nth-of-type(2)) p {
+		line-clamp: 4;
+		-webkit-line-clamp: 4;
+	}
+
+	.info-banner .info-banner-card-1 img:nth-of-type(2) {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.info-banner {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.info-banner .info-banner-card-2 .info-banner-card-2-logo {
+		display: none;
+	}
 }
 
 /* ------------------------		Featured Cars	---------------------------- */
