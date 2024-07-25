@@ -76,7 +76,7 @@ header {
 }
 
 .navbar .nav-btns button:hover {
-	background-color: #000;
+	background-color: #1E1E20;
 	color: #fff;
 }
 
@@ -190,7 +190,7 @@ header {
 }
 
 .hero-body .hero-filter ul .hero-filter-btn button:hover {
-	background-color: #000;
+	background-color: #1E1E20;
 }
 
 .hero-body .hero-filter ul .hero-filter-btn button .search-icn {
@@ -219,7 +219,7 @@ header {
 }
 
 .hero-body .btns button:hover, .hero-body .btns button:nth-last-child(1):hover {
-	background-color: #000;
+	background-color: #1E1E20;
 	color: #fff;
 }
 
