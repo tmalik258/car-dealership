@@ -46,7 +46,7 @@ header {
 	align-items: flex-end;
 	padding-inline: 5px;
 	cursor: pointer;
-	transition: .2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
 }
 
 .navbar .nav-menu .nav-menu-item:is(.active, :hover) {
@@ -66,7 +66,7 @@ header {
 	padding-bottom: 5px;
 	padding-top: 12px;
 	cursor: pointer;
-	transition: .2s all ease-out;
+	transition: 0.2s all ease-out;
 }
 
 .navbar .nav-btns button:nth-of-type(1) {
@@ -79,17 +79,31 @@ header {
 }
 
 .navbar .nav-btns button:hover {
-	background-color: #1E1E20;
+	background-color: #1e1e20;
 	color: #fff;
 }
 
 @media screen and (max-width: 1250px) {
 	.navbar .nav-menu {
-		gap: .2em;
+		gap: 0.2em;
 	}
 	.navbar .nav-btns button {
-	padding-inline: 10px;
+		padding-inline: 10px;
+		font-size: .8em;
+	}
+}
 
+@media screen and (max-width: 992px) {
+	.navbar {
+		justify-content: space-between;
+	}
+
+	.navbar .nav-menu {
+		display: none;
+	}
+
+	.navbar .nav-btns button {
+		display: none;
 	}
 }
 
@@ -127,7 +141,7 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	
+
 	background-color: rgb(33, 33, 33);
 	height: 100vh;
 }
@@ -144,6 +158,13 @@ header {
 
 .hero-body .hero-heading {
 	font-size: 3em;
+}
+
+@media screen and (max-width: 600px) {
+	.hero-body .hero-heading {
+		font-size: 2.5em;
+		padding-left: 0.2em;
+	}
 }
 
 /*--------------- Hero Filter ---------------*/
@@ -200,17 +221,29 @@ header {
 	height: 100%;
 	border: none;
 	cursor: pointer;
-	transition: .2s all ease-out;
+	transition: 0.2s all ease-out;
 }
 
 .hero-body .hero-filter ul .hero-filter-btn button:hover {
-	background-color: #1E1E20;
+	background-color: #1e1e20;
 }
 
 .hero-body .hero-filter ul .hero-filter-btn button .search-icn {
 	position: relative;
 	right: 7px;
 	top: 3px;
+}
+
+@media screen and (max-width: 992px) {
+	.hero-body .hero-filter ul {
+		padding-left: 1.5em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hero-filter {
+		display: none;
+	}
 }
 
 /*--------------- Hero Buttons ---------------*/
@@ -229,11 +262,12 @@ header {
 	font-size: 0.9em;
 	background-color: #fff;
 	cursor: pointer;
-	transition: .2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
 }
 
-.hero-body .btns button:hover, .hero-body .btns button:nth-last-child(1):hover {
-	background-color: #1E1E20;
+.hero-body .btns button:hover,
+.hero-body .btns button:nth-last-child(1):hover {
+	background-color: #1e1e20;
 	color: #fff;
 }
 
@@ -251,10 +285,25 @@ header {
 	padding-right: 10px;
 }
 
+@media screen and (max-width: 576px) {
+	.hero-body .btns {
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.hero-body .btns button {
+		width: 80vw;
+	}
+}
+
+/*--------------- Hero Arrows ---------------*/
+
 .arrow {
 	font-size: 3em;
 	flex-grow: 1;
 }
+
+/*--------------- Hero End ---------------*/
 
 .hero-end {
 	height: 263px;
@@ -277,4 +326,30 @@ header {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: -1;
+}
+
+@media screen and (max-width: 992px) {
+	.arrow {
+		display: none;
+	}
+
+	.hero-end {
+		height: 1em;
+	}
+
+	.hero-end img:nth-of-type(1) {
+		display: none;
+	}
+
+	.hero-end img:nth-of-type(2) {
+		width: 80%;
+		height: auto;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.hero-end {
+		padding-block: 3em;
+	}
 }
