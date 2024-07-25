@@ -11,7 +11,6 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	/* background-color: blue; */
 	height: 10em;
 	position: absolute;
 	width: 100%;
@@ -24,20 +23,23 @@ header {
 	font-size: 0.95em;
 }
 
+.navbar .logo {
+	text-align: center;
+}
+
 .navbar .nav-menu {
 	flex-basis: 37%;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	/* background-color: purple; */
+	gap: 1em;
 	list-style: none;
 	height: 67%;
-	/* background-color: green; */
 	align-self: flex-start;
-	/* font-size: 0.9em; */
 }
 
 .navbar .nav-menu .nav-menu-item {
+	min-width: max-content;
 	height: 100%;
 	padding-bottom: 15px;
 	display: flex;
@@ -53,6 +55,7 @@ header {
 
 .navbar .nav-btns {
 	display: flex;
+	justify-content: center;
 	gap: 10px;
 }
 
@@ -100,7 +103,7 @@ header {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: 0px -300px;
+	object-position: bottom;
 }
 
 .hero-bg-cloud-img img {
@@ -121,7 +124,7 @@ header {
 
 .hero-body {
 	position: relative;
-	bottom: 50px;
+	bottom: 6.5em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -163,6 +166,7 @@ header {
 	height: 5em;
 	border-radius: 100px;
 	flex-grow: 1;
+	font-size: 0.8em;
 	color: #575756;
 }
 
@@ -259,7 +263,7 @@ header {
 	width: 942.72px;
 	height: 715.2px;
 	position: absolute;
-	top: -20em;
+	top: -23em;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: -1;
