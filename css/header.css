@@ -355,7 +355,7 @@ header {
 
 @media screen and (max-width: 576px) {
 	.hero-end {
-		padding-block: 1em;
+		padding-block: 2em;
 		/* height: 0; */
 	}
 }
