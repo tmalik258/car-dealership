@@ -11,7 +11,7 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 10em;
+	height: 7.5em;
 	position: absolute;
 	width: 100%;
 	z-index: 1;
@@ -20,7 +20,7 @@ header {
 .navbar * {
 	color: white;
 	text-transform: uppercase;
-	font-size: 0.95em;
+	font-size: 0.82em;
 }
 
 .navbar .logo {
@@ -41,7 +41,7 @@ header {
 .navbar .nav-menu .nav-menu-item {
 	min-width: max-content;
 	height: 100%;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 	display: flex;
 	align-items: flex-end;
 	padding-inline: 5px;
@@ -62,9 +62,9 @@ header {
 .navbar .nav-btns button {
 	border: none;
 	border-radius: 30px;
-	padding-inline: 25px;
+	padding-inline: 20px;
 	padding-bottom: 5px;
-	padding-top: 12px;
+	padding-top: 9px;
 	cursor: pointer;
 	transition: 0.2s all ease-out;
 }
@@ -81,25 +81,6 @@ header {
 .navbar .nav-btns button:hover {
 	background-color: #1e1e20;
 	color: #fff;
-}
-
-@media screen and (max-width: 1600px) {
-	.navbar {
-		height: 7.5em;
-	}
-
-	.navbar * {
-		font-size: .8em;
-	}
-
-	.navbar .nav-btns button {
-		padding-inline: 20px;
-		padding-top: 9px;
-	}
-
-	.navbar .nav-menu .nav-menu-item {
-		padding-bottom: 10px;
-	}
 }
 
 @media screen and (max-width: 1250px) {
@@ -135,6 +116,7 @@ header {
 	top: 0;
 	left: 0;
 	opacity: 0.2;
+	max-height: 47.5em;
 }
 
 .hero-bg-cloud-img {
@@ -150,7 +132,7 @@ header {
 }
 
 .hero-bg-cloud-img img {
-	object-fit: fill;
+	object-fit: cover;
 	object-position: left;
 }
 
@@ -167,7 +149,7 @@ header {
 
 .hero-body {
 	position: relative;
-	bottom: 6.5em;
+	bottom: 4em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -176,17 +158,7 @@ header {
 }
 
 .hero-body .hero-heading {
-	font-size: 3em;
-}
-
-@media screen and (max-width: 1600px) {
-	.hero-body {
-		bottom: 4em;
-	}
-
-	.hero-body .hero-heading {
-		font-size: 2.3em;
-	}
+	font-size: 2.3em;
 }
 
 @media screen and (max-width: 600px) {
@@ -226,7 +198,7 @@ header {
 	height: 5em;
 	border-radius: 100px;
 	flex-grow: 1;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	color: #575756;
 }
 
@@ -241,7 +213,7 @@ header {
 
 .hero-body .hero-filter ul .hero-filter-btn button {
 	color: #fff;
-	font-size: 2em;
+	font-size: 1.85em;
 	font-weight: 400;
 	border-bottom-right-radius: 100px;
 	border-top-right-radius: 100px;
@@ -261,16 +233,6 @@ header {
 	position: relative;
 	right: 7px;
 	top: 3px;
-}
-
-@media screen and (max-width: 1600px) {
-	.hero-body .hero-filter ul {
-		font-size: 0.7em;
-	}
-
-	.hero-body .hero-filter ul .hero-filter-btn button {
-		font-size: 1.85em;
-	}
 }
 
 @media screen and (max-width: 992px) {
@@ -298,7 +260,7 @@ header {
 	padding-inline: 20px;
 	padding-top: 11px;
 	padding-bottom: 6px;
-	font-size: 0.9em;
+	font-size: 0.75em;
 	background-color: #fff;
 	cursor: pointer;
 	transition: 0.2s all ease-in-out;
@@ -322,13 +284,6 @@ header {
 .hero-body .btns button .btn-txt {
 	padding-bottom: 10px;
 	padding-right: 10px;
-}
-
-
-@media screen and (max-width: 1600px) {
-	.hero-body .btns button {
-		font-size: 0.75em;
-	}
 }
 
 @media screen and (max-width: 576px) {
@@ -365,20 +320,13 @@ header {
 }
 
 .hero-end img:nth-of-type(2) {
-	width: 942.72px;
+	width: 750px;
 	height: auto;
 	position: absolute;
-	top: -23em;
+	top: -18em;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: -1;
-}
-
-@media screen and (max-width: 1600px) {
-	.hero-end img:nth-of-type(2) {
-		width: 750px;
-		top: -18em;
-	}
 }
 
 @media screen and (max-width: 992px) {
