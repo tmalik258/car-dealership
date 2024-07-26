@@ -1,7 +1,4 @@
 header {
-	/* position: relative; */
-	/* width: 100vw; */
-	/* height: 100vh; */
 	color: #fff;
 }
 
@@ -27,6 +24,44 @@ header {
 	text-align: center;
 }
 
+.navbar #nav-toggle {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	width: 40px;
+	height: 40px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.navbar #nav-toggle .icon-bar {
+	display: block;
+	width: 25px;
+	height: 4px;
+	margin: 2px;
+	background-color: #fff;
+}
+
+.navbar #nav-toggle:is(:focus, :hover) .icon-bar {
+	background-color: #fff;
+}
+
+.navbar #nav-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
+	position: absolute;
+	margin: 0;
+	width: 30px;
+}
+
+.navbar #nav-toggle[aria-expanded="true"] .icon-bar:first-child {
+	transform: rotate(45deg);
+}
+
+.navbar #nav-toggle[aria-expanded="true"] .icon-bar:last-child {
+	transform: rotate(-45deg);
+}
+
 .navbar .nav-menu {
 	flex-basis: 37%;
 	display: flex;
@@ -49,7 +84,7 @@ header {
 	transition: 0.2s all ease-in-out;
 }
 
-.navbar .nav-menu .nav-menu-item:is(.active, :hover) {
+.navbar .nav-menu .nav-menu-item:is(.active, :hover, :focus) {
 	background-color: red;
 }
 
@@ -89,7 +124,7 @@ header {
 	}
 	.navbar .nav-btns button {
 		padding-inline: 10px;
-		font-size: .8em;
+		font-size: 0.8em;
 	}
 }
 
@@ -98,12 +133,57 @@ header {
 		justify-content: space-between;
 	}
 
+	.navbar #nav-toggle {
+		display: flex;
+	}
+/* 
+	.navbar #nav-toggle[aria-expanded="true"] {
+		
+	} */
+
+	.navbar * {
+		font-size: 0.95em;
+	}
+
 	.navbar .nav-menu {
 		display: none;
 	}
 
-	.navbar .nav-btns button {
+	.navbar #nav-toggle[aria-expanded="true"] + .nav-menu {
+		position: absolute;
+		top: calc(50% + 3em);
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: black;
+		width: 90%;
+		height: calc( 100% + 10em );
+		padding-block: 2em;
+		padding-bottom: 5em;
+		border-radius: 1em;
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5em;
+	}
+
+	.navbar .nav-menu .nav-menu-item {
+		align-items: center;
+		padding-bottom: 0;
+	}
+
+	.navbar .nav-btns {
 		display: none;
+	}
+
+	.navbar #nav-toggle[aria-expanded="true"] + .nav-menu + .nav-btns {
+		display: flex;
+		position: absolute;
+		top: 28em;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
 	}
 }
 
@@ -345,7 +425,6 @@ header {
 		width: 80%;
 	}
 }
-
 
 @media screen and (max-width: 768px) {
 	.hero-end {
