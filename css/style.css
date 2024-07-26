@@ -172,6 +172,7 @@ body, html {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	gap: 2.5em;
 	position: relative;
 	background-color: #a00400;
 	z-index: 2;
@@ -823,7 +824,7 @@ body, html {
 	color: #fff;
 	border: none;
 	width: fit-content;
-	font-size: 2em;
+	font-size: 1.7em;
 	padding-inline: 1.3em;
 	padding-block: 0.35em;
 	border-radius: 2em;
@@ -852,7 +853,7 @@ body, html {
 }
 
 .contact .contact-info h2 {
-	font-size: 2.3em;
+	font-size: 2em;
 	margin-bottom: 1em;
 }
 
@@ -861,7 +862,7 @@ body, html {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-	font-size: 1.8em;
+	font-size: 1.45em;
 	color: #f87800;
 }
 
@@ -875,6 +876,28 @@ body, html {
 	transition: 0.1s all ease-out;
 }
 
+@media screen and (max-width: 1200px)  {
+	.contact .contact-form form h2 {
+		font-size: 2.2em;
+	}
+
+	.contact .contact-form form .form-group input {
+		padding-block: 0.3em;
+	}
+
+	.contact .contact-form form button[type="submit"] {
+		font-size: 1.3em;
+	}
+
+	.contact .contact-info h2 {
+		font-size: 1.5em;
+	}
+
+	.contact .contact-info .contact-info-list {
+		font-size: 1.2em;
+	}
+}
+
 @media screen and (max-width: 992px) {
 	.contact {
 		width: 90%;
@@ -883,14 +906,6 @@ body, html {
 
 	.contact .contact-info {
 		padding-inline: 1em;
-	}
-
-	.contact .contact-info h2 {
-		font-size: 1.8em;
-	}
-
-	.contact .contact-info .contact-info-list {
-		font-size: 1.3em;
 	}
 }
 
@@ -909,7 +924,7 @@ body, html {
 	}
 
 	.contact .contact-form form button[type="submit"] {
-		font-size: 1.4em;
+		font-size: 1.1em;
 	}
 
 	.contact .contact-info {
