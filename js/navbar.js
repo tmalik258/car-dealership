@@ -38,7 +38,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// Optional: Close navbar when pressing Escape key
+// Close navbar when pressing Escape key
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && isNavbarExpanded) {
     toggleNavbarVisibility(false);

@@ -136,10 +136,6 @@ header {
 	.navbar #nav-toggle {
 		display: flex;
 	}
-/* 
-	.navbar #nav-toggle[aria-expanded="true"] {
-		
-	} */
 
 	.navbar * {
 		font-size: 0.95em;
@@ -435,6 +431,5 @@ header {
 @media screen and (max-width: 576px) {
 	.hero-end {
 		padding-block: 2em;
-		/* height: 0; */
 	}
 }
