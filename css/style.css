@@ -1149,4 +1149,15 @@ footer .footer-copyright {
 		justify-content: space-between;
 		gap: 5em;
 	}
+
+}
+
+@media screen and (max-width: 600px) {
+	footer .footer-content .footer-img {
+		display: block;
+		flex: 100%;
+		position: relative;
+		left: 2em;
+	}
+
 }
