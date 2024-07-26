@@ -575,17 +575,17 @@ body, html {
 	display: flex;
 	justify-content: center;
 	gap: 2.5em;
-	padding-inline: 7em;
+	padding-inline: 5.5em;
 	padding-block: 3em;
 }
 
 .blog .blog-posts .blog-author {
 	color: #e30613;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 .blog .blog-posts .blog-title {
-	font-size: 1.7em;
+	font-size: 1.4em;
 	font-weight: 700;
 	max-width: 12em;
 }
@@ -647,16 +647,16 @@ body, html {
 }
 
 .blog .blog-posts .blog-featured .blog-featured-details .blog-author {
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 .blog .blog-posts .blog-featured .blog-featured-details .blog-title {
-	font-size: 2.2em;
+	font-size: 2em;
 	line-height: 1.2em;
 }
 
 .blog .blog-posts .blog-featured .blog-featured-details .learn-more-btn {
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 
 .blog .blog-posts .learn-more-btn {
@@ -665,10 +665,10 @@ body, html {
 	color: #fff;
 	border: none;
 	border-radius: 2em;
-	padding-inline: 35px;
-	padding-top: 12px;
+	padding-inline: 30px;
+	padding-top: 9px;
 	padding-bottom: 5px;
-	font-size: 1em;
+	font-size: 0.9em;
 	font-weight: 600;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
@@ -689,7 +689,11 @@ body, html {
 	}
 
 	.blog .blog-posts {
-		padding-inline: 5em;
+		padding-inline: 3em;
+	}
+
+	.blog .blog-posts .blog-list {
+		padding-inline: 1em;
 	}
 }
 
