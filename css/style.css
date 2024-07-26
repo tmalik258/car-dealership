@@ -56,11 +56,13 @@ body, html {
 .promotion-banner .promotion-banner-body .promotion-banner-list h3 {
 	font-weight: 700;
 	line-height: 1em;
+	font-size: 1em;
 }
 
 .promotion-banner .promotion-banner-body .promotion-banner-list p {
 	font-weight: 200;
 	line-height: 1.3em;
+	font-size: 0.9em;
 	overflow: hidden;
 	display: -webkit-box;
 	line-clamp: 2;
@@ -186,13 +188,13 @@ body, html {
 }
 
 .info-banner .info-banner-card-1 > div:nth-of-type(1) h3 {
-	font-size: 2.2em;
+	font-size: 2em;
 }
 
 .info-banner .info-banner-card-1 > div:nth-of-type(1) p {
-	font-size: 0.85em;
+	font-size: 0.8em;
 	font-weight: 200;
-	line-height: 1.9em;
+	line-height: 1.7em;
 	overflow: hidden;
 	line-clamp: 5;
 	display: -webkit-box;
@@ -211,7 +213,7 @@ body, html {
 }
 
 .info-banner .info-banner-card-1 > div:nth-of-type(2) p {
-	font-size: 0.8em;
+	font-size: 0.75em;
 	font-weight: 200;
 	line-height: 1.4em;
 	overflow: hidden;
@@ -262,28 +264,34 @@ body, html {
 	overflow: hidden;
 }
 
-.info-banner .info-banner-card-2 div {
+.info-banner .info-banner-card-2 > div {
 	padding: 2em;
 }
 
 .info-banner .info-banner-card-2 div:nth-of-type(1) h3 {
-	font-size: 2.2em;
+	font-size: 2em;
 	font-weight: 600;
 }
 
 .info-banner .info-banner-card-2 div:nth-of-type(1) p {
-	font-size: 2.2em;
+	font-size: 2em;
 	line-height: 1.2em;
 	font-weight: 300;
+}
+
+.info-banner .info-banner-card-2 div:nth-of-type(1) .info-banner-btns {
+	display: flex;
+	gap: 0.5em;
+	margin-top: 0.6em;
 }
 
 .info-banner .info-banner-card-2 div:nth-of-type(1) button {
 	border: none;
 	border-radius: 30px;
-	padding-inline: 25px;
-	padding-top: 12px;
+	padding-inline: 20px;
+	padding-top: 9px;
 	padding-bottom: 5px;
-	font-size: 1em;
+	font-size: 0.9em;
 	background-color: #fff;
 	cursor: pointer;
 	transition: 0.2s all ease-out;
@@ -387,7 +395,7 @@ body, html {
 	padding-inline: 25px;
 	padding-top: 12px;
 	padding-bottom: 5px;
-	font-size: 1em;
+	font-size: 0.9em;
 	background-color: #f6f6f6;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
@@ -445,17 +453,17 @@ body, html {
 }
 
 .featured-cars .car-grid .car-card .car-card-body .car-card-title h4 {
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 .featured-cars .car-grid .car-card .car-card-body .car-card-title button {
 	background-color: #e30613;
 	color: #fff;
 	border: none;
-	padding-inline: 35px;
-	padding-top: 12px;
+	padding-inline: 30px;
+	padding-top: 9px;
 	padding-bottom: 5px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: 600;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
