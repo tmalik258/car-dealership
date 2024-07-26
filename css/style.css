@@ -970,13 +970,13 @@ footer .footer-content .footer-brand .social-icons {
 
 footer .footer-content .footer-brand .footer-description {
 	font-weight: 300;
-	font-size: 1.3em;
+	font-size: 1em;
 	line-height: 1.7em;
 	margin-block: 1em;
 }
 
 footer .footer-content .footer-links .footer-links-title {
-	font-size: 1.7em;
+	font-size: 1.45em;
 	font-weight: 600;
 }
 
@@ -1006,7 +1006,7 @@ footer
 	a {
 	text-decoration: none;
 	color: #fff;
-	font-size: 1.3em;
+	font-size: 1em;
 	font-weight: 300;
 }
 
@@ -1036,9 +1036,15 @@ footer .footer-content .footer-contact {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-	font-size: 1.8em;
+	font-size: 1.2em;
 	position: relative;
 	top: 1em;
+}
+
+footer .footer-content .footer-contact .contact-item {
+	display: flex;
+	align-items: center;
+	gap: .4em;
 }
 
 footer .footer-copyright {
@@ -1058,7 +1064,7 @@ footer .footer-copyright {
 	}
 
 	footer .footer-content .footer-contact {
-		font-size: 1.3em;
+		font-size: 1.1em;
 	}
 }
 
