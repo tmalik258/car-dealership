@@ -83,6 +83,25 @@ header {
 	color: #fff;
 }
 
+@media screen and (max-width: 1600px) {
+	.navbar {
+		height: 7.5em;
+	}
+
+	.navbar * {
+		font-size: .8em;
+	}
+
+	.navbar .nav-btns button {
+		padding-inline: 20px;
+		padding-top: 9px;
+	}
+
+	.navbar .nav-menu .nav-menu-item {
+		padding-bottom: 10px;
+	}
+}
+
 @media screen and (max-width: 1250px) {
 	.navbar .nav-menu {
 		gap: 0.2em;
@@ -143,7 +162,7 @@ header {
 	align-items: center;
 
 	background-color: rgb(33, 33, 33);
-	height: 100vh;
+	height: 47.5em;
 }
 
 .hero-body {
@@ -152,12 +171,22 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 20px;
+	gap: 15px;
 	flex-grow: 2;
 }
 
 .hero-body .hero-heading {
 	font-size: 3em;
+}
+
+@media screen and (max-width: 1600px) {
+	.hero-body {
+		bottom: 4em;
+	}
+
+	.hero-body .hero-heading {
+		font-size: 2.3em;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -234,6 +263,16 @@ header {
 	top: 3px;
 }
 
+@media screen and (max-width: 1600px) {
+	.hero-body .hero-filter ul {
+		font-size: 0.7em;
+	}
+
+	.hero-body .hero-filter ul .hero-filter-btn button {
+		font-size: 1.85em;
+	}
+}
+
 @media screen and (max-width: 992px) {
 	.hero-body .hero-filter ul {
 		padding-left: 1.5em;
@@ -256,9 +295,9 @@ header {
 .hero-body .btns button {
 	border: none;
 	border-radius: 30px;
-	padding-inline: 25px;
-	padding-top: 12px;
-	padding-bottom: 5px;
+	padding-inline: 20px;
+	padding-top: 11px;
+	padding-bottom: 6px;
 	font-size: 0.9em;
 	background-color: #fff;
 	cursor: pointer;
@@ -283,6 +322,13 @@ header {
 .hero-body .btns button .btn-txt {
 	padding-bottom: 10px;
 	padding-right: 10px;
+}
+
+
+@media screen and (max-width: 1600px) {
+	.hero-body .btns button {
+		font-size: 0.75em;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -320,12 +366,19 @@ header {
 
 .hero-end img:nth-of-type(2) {
 	width: 942.72px;
-	height: 715.2px;
+	height: auto;
 	position: absolute;
 	top: -23em;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: -1;
+}
+
+@media screen and (max-width: 1600px) {
+	.hero-end img:nth-of-type(2) {
+		width: 750px;
+		top: -18em;
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -343,7 +396,6 @@ header {
 
 	.hero-end img:nth-of-type(2) {
 		width: 80%;
-		height: auto;
 	}
 }
 
