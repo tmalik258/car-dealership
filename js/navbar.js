@@ -3,42 +3,54 @@ const navbarMenu = document.querySelector("#nav-menu");
 const navbarBtns = document.querySelector(".nav-btns");
 let isNavbarExpanded = navToggle.getAttribute("aria-expanded") === "true";
 
+const toggleOverFlow = (state = '') => {
+	document.documentElement.style.overflowY = state;
+    document.body.style.overflowY = state;
+}
+
 const toggleNavbarVisibility = (setExpanded = null) => {
   if (setExpanded !== null) {
     isNavbarExpanded = setExpanded;
   } else {
     isNavbarExpanded = !isNavbarExpanded;
   }
-  console.log('helo')
   navToggle.setAttribute("aria-expanded", isNavbarExpanded);
   
   // Toggle scroll functionality
   if (isNavbarExpanded) {
-    document.documentElement.style.overflow = 'hidden';
-    document.body.style.overflow = 'hidden';
+    toggleOverFlow('hidden')
   } else {
-	document.documentElement.style.overflow = '';
-    document.body.style.overflow = '';
+	toggleOverFlow('');
   }
 };
 
 navToggle.addEventListener("click", () => toggleNavbarVisibility());
 
-navbarMenu.addEventListener("click", (event) => {
+navbarMenu.addEventListener("click", (e) => {
   // Prevent clicks inside the menu from closing it
-  event.stopPropagation();
+  e.stopPropagation();
 });
 
 // Close navbar when clicking outside
-document.addEventListener("click", (event) => {
-  if (isNavbarExpanded && !navbarMenu.contains(event.target) && event.target !== navToggle && !navToggle.contains(event.target) && !navbarBtns.contains(event.target)) {
+document.addEventListener("click", (e) => {
+  if (isNavbarExpanded && !navbarMenu.contains(e.target) && e.target !== navToggle && !navToggle.contains(e.target) && !navbarBtns.contains(e.target)) {
     toggleNavbarVisibility(false);
   }
 });
 
 // Optional: Close navbar when pressing Escape key
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && isNavbarExpanded) {
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && isNavbarExpanded) {
     toggleNavbarVisibility(false);
   }
+});
+
+let resizeTimer;
+
+window.addEventListener('resize', () => {
+	clearTimeout(resizeTimer);
+
+    resizeTimer = setTimeout(() => {
+        toggleNavbarVisibility(false); // toggle Navbar to False
+    }, 250); // Wait for 250ms after resize ends before executing
 });
