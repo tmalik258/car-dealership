@@ -39,7 +39,7 @@ body, html {
 	place-items: center;
 	gap: 5em;
 	padding-block: 3em;
-	padding-left: 5em;
+	padding-left: 4.5em;
 	z-index: 3;
 }
 
@@ -48,6 +48,7 @@ body, html {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	align-items: center;
 	gap: 40px;
 	font-size: 1.7em;
 	grid-column-start: 2;
@@ -113,21 +114,20 @@ body, html {
 @media screen and (max-width: 992px) {
 	.promotion-banner .promotion-banner-body {
 		grid-template-columns: 1fr;
-		
+		padding-left: 0;
 	}
 
 	.promotion-banner .promotion-banner-body .promotion-banner-list {
-		padding-right: 3em;
+		padding-inline: 2em;
 	}
 	.promotion-banner .promotion-banner-body .promotion-banner-img {
 		justify-self: end;
-		/* align-self: flex-end; */
 	}
 }
 
-@media screen and (max-width: 768px) {
-	.promotion-banner .promotion-banner-body .promotion-banner-img {
-		display: none;
+@media screen and (max-width: 576px) {
+	.promotion-banner .promotion-banner-body .promotion-banner-list {
+		font-size: 1.4em;
 	}
 }
 
@@ -356,7 +356,7 @@ body, html {
 
 @media screen and (max-width: 992px) {
 	.info-banner {
-		margin-top: 5em;
+		margin-block: 5em;
 		flex-direction: column;
 	}
 }
@@ -522,6 +522,7 @@ body, html {
 		flex-direction: column;
 		gap: 10px;
 		padding-inline: 2em;
+		margin-bottom: 2em;
 	}
 
 	.featured-cars .section-header .section-header-btns button {
@@ -735,10 +736,16 @@ body, html {
 
 	.blog .blog-posts .blog-list {
 		padding-inline: 1em;
+		padding-block: 0.5em;
+		gap: 2.5em;
 	}
 }
 
 @media screen and (max-width: 600px) {
+	.blog {
+		margin-block: 5em;
+	}
+
 	.blog .section-header h3 {
 		font-size: 1.1em;
 	}
@@ -747,6 +754,10 @@ body, html {
 		font-size: 2.5em;
 		line-height: 1em;
 		margin-top: 0.3em;
+	}
+
+	.blog .blog-posts {
+		padding-block: 1em;
 	}
 
 	.blog .blog-posts .blog-list .blog-list-item {
@@ -1124,10 +1135,9 @@ footer .footer-copyright {
 }
 
 @media screen and (max-width: 768px) {
-	/* footer .footer-content .footer-brand {
-		flex: 100%;
-		flex-grow: 1;
-	} */
+	footer {
+		margin-top: 5em;
+	}
 
 	footer .footer-content .footer-links .footer-links-list-container {
 		flex: 100%;

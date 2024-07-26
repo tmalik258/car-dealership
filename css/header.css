@@ -163,7 +163,6 @@ header {
 
 @media screen and (max-width: 600px) {
 	.hero-body .hero-heading {
-		font-size: 2.5em;
 		padding-left: 0.2em;
 	}
 }
@@ -351,5 +350,12 @@ header {
 @media screen and (max-width: 768px) {
 	.hero-end {
 		padding-block: 3em;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.hero-end {
+		padding-block: 1em;
+		/* height: 0; */
 	}
 }
