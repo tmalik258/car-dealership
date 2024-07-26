@@ -736,8 +736,12 @@ body, html {
 
 	.blog .blog-posts .blog-list {
 		padding-inline: 1em;
-		padding-block: 0.5em;
+		padding-block: 1.3em;
 		gap: 2.5em;
+	}
+
+	.blog .blog-posts .blog-featured {
+		gap: 2em;
 	}
 }
 
