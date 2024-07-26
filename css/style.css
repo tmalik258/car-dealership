@@ -10,7 +10,7 @@
 
 body, html {
 	background-color: #f5f5f5;
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 }
 
 /* ------------------------		Promotion Banner	---------------------------- */
@@ -113,10 +113,15 @@ body, html {
 @media screen and (max-width: 992px) {
 	.promotion-banner .promotion-banner-body {
 		grid-template-columns: 1fr;
+		
 	}
 
 	.promotion-banner .promotion-banner-body .promotion-banner-list {
 		padding-right: 3em;
+	}
+	.promotion-banner .promotion-banner-body .promotion-banner-img {
+		justify-self: end;
+		/* align-self: flex-end; */
 	}
 }
 
