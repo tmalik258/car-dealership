@@ -1,0 +1,51 @@
+header {
+	color: #fff;
+}
+
+/*--------------- Hero Background ---------------*/
+.hero-bg-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.4;
+	max-height: 35em;
+}
+
+.hero-bg-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+/*--------------- Hero ---------------*/
+
+.hero {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	background-color: rgb(33, 33, 33);
+	height: 35em;
+}
+
+.hero-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	flex-grow: 2;
+	z-index: 0;
+}
+
+.hero-body .hero-heading {
+	font-size: 2.3em;
+}
+
+@media screen and (max-width: 600px) {
+	.hero-body .hero-heading {
+		padding-left: 0.2em;
+	}
+}
