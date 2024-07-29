@@ -77,6 +77,11 @@
 		grid-row-start: initial;
 		grid-row-end: initial;
 	}
+	
+	.beneficios-section .beneficios-header div:nth-of-type(2) {
+		font-size: 1.5em;
+		grid-row-start: 4;
+	} 
 }
 
 @media screen and (max-width: 768px) {
