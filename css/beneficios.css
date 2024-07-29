@@ -1,0 +1,193 @@
+/*------------------	Beneficios Section	 ------------------*/
+
+.beneficios-section {
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+	width: 80%;
+	margin: auto;
+	margin-block: 5em;
+}
+
+.beneficios-section .beneficios-header {
+	display: flex;
+	justify-content: center;
+}
+
+.beneficios-section .beneficios-header .beneficios-header-body {
+	flex: 40%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+.beneficios-section .beneficios-header .beneficios-header-img {
+	max-height: 20em;
+	flex: 60%;
+	overflow: hidden;
+	border-radius: 1.5em;
+}
+
+.beneficios-section .beneficios-header .beneficios-header-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.beneficios-section .beneficios-header .beneficios-header-body div:nth-of-type(1) {
+	font-size: 1.2em;
+}
+
+.beneficios-section .beneficios-header .beneficios-header-body h1 {
+	font-size: 3.3em;
+	width: 7.5em;
+	font-weight: 700;
+	line-height: 1.2em;
+}
+
+.red {
+	color: red;
+}
+
+.beneficios-section .beneficios-header .beneficios-header-body div:nth-of-type(2) {
+	font-size: 1.5em;
+}
+
+.beneficios-section .beneficios-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2em;
+}
+
+.beneficios-section .beneficios-grid .beneficios-grid-item {
+	display: flex;
+	align-items: center;
+	gap: 3em;
+}
+
+.beneficios-section .beneficios-grid .beneficios-grid-item ul {
+	color: #706F6F;
+}
+
+@media screen and (max-width: 992px) {
+	.beneficios-section .beneficios-header {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.beneficios-section .beneficios-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.beneficios-section {
+		width: 90%;
+	}
+
+	.beneficios-section .beneficios-header .beneficios-header-body div:nth-of-type(1) {
+		font-size: 1em;
+	}
+
+	.beneficios-section .beneficios-header .beneficios-header-body h1 {
+		font-size: 2.8em;
+	}
+
+	.beneficios-section .beneficios-header .beneficios-header-body div:nth-of-type(2) {
+		font-size: 1.2em;
+	}
+
+	.beneficios-section .beneficios-grid .beneficios-grid-item {
+		flex-direction: column;
+		gap: 1em;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.beneficios-section .beneficios-grid .beneficios-grid-item h2 {
+		font-size: 1.5em;
+		font-weight: 600;
+	}
+}
+
+/* ------------------------		Promotion Banner	---------------------------- */
+.promotion-banner {
+	background-color: #e30613;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.promotion-banner .promotion-banner-bg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	opacity: 0.2;
+}
+
+.promotion-banner .promotion-banner-body {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 4.5em;
+	min-height: 40em;
+}
+
+.promotion-banner .promotion-banner-body h1 svg {
+	width: 100%;
+	height: 100%;
+}
+
+.promotion-banner .promotion-banner-body .promotion-banner-img {
+	position: absolute;
+	right: 0;
+	top: 2.5em;
+	z-index: -1;
+}
+
+.promotion-banner .promotion-banner-body .promotion-banner-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 1600px) {
+	.promotion-banner .promotion-banner-body {
+		padding-left: 0;
+		justify-content: center;
+	}
+	.promotion-banner .promotion-banner-body .promotion-banner-img {
+		width: 70%;
+		top: 50%;
+		transform: translateY(-50%);
+		opacity: 0.6;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.promotion-banner .promotion-banner-body {
+		min-height: 25em;
+	}
+	
+	.promotion-banner .promotion-banner-body h1 {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.promotion-banner .promotion-banner-body {
+		min-height: 15em;
+	}
+
+	.promotion-banner .promotion-banner-body h1 {
+		width: 90%;
+	}
+}
