@@ -16,7 +16,6 @@
 
 .beneficios-section .beneficios-header .beneficios-header-img {
 	max-height: 15em;
-	flex: 60%;
 	overflow: hidden;
 	border-radius: 1.5em;
 	grid-column-start: 2;
@@ -73,7 +72,7 @@
 	}
 
 	.beneficios-section .beneficios-header .beneficios-header-img {
-		grid-column-start: 1;
+		grid-column-start: initial;
 		grid-row-start: initial;
 		grid-row-end: initial;
 	}
@@ -95,15 +94,15 @@
 		width: 90%;
 	}
 
-	.beneficios-section .beneficios-header .beneficios-header-body div:nth-of-type(1) {
+	.beneficios-section .beneficios-header div:nth-of-type(1) {
 		font-size: 1em;
 	}
 
-	.beneficios-section .beneficios-header .beneficios-header-body h1 {
+	.beneficios-section .beneficios-header h1 {
 		font-size: 2.8em;
 	}
 
-	.beneficios-section .beneficios-header .beneficios-header-body div:nth-of-type(2) {
+	.beneficios-section .beneficios-header div:nth-of-type(2) {
 		font-size: 1.2em;
 	}
 
