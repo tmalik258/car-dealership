@@ -298,16 +298,15 @@
 	.search * {
 		font-size: 1em;
 	}
-	
-	.search .icon {
-		width: 4em;
-		right: 2em;
-	}
 }
 
 @media screen and (max-width: 600px) {
 	.list-grid {
 		padding-inline: 1em;
+	}
+
+	.search .icon {
+		right: 10.8%;
 	}
 }
 
@@ -321,5 +320,13 @@
 
 	.list-grid .list-filter .list-select select {
 		width: 100%;
+	}
+
+	.search .icon {
+		right: 10%;
+	}
+
+	.search input[type="text"] {
+		outline: none;
 	}
 }
