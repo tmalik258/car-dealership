@@ -10,7 +10,7 @@ header {
 	top: 0;
 	left: 0;
 	opacity: 0.4;
-	max-height: 35em;
+	max-height: 25em;
 }
 
 .hero-bg-img img {
@@ -28,18 +28,16 @@ header {
 	align-items: center;
 
 	background-color: rgb(33, 33, 33);
-	height: 35em;
+	height: 25em;
 }
 
 .hero-body {
 	position: relative;
-	top: 3em;
+	top: 2em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-top: 3px solid #6d6b6cac;
 	width: 98%;
-	height: 25em;
 	z-index: 0;
 }
 
