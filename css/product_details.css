@@ -266,14 +266,113 @@
 	grid-template-columns: 2fr 1.2fr;
 	background-color: #ececec;
 	border-radius: 1em;
+	overflow: hidden;
 }
 
 .content-section .contacto .contacto-form {
 	padding: 2em;
-	
+	width: 80%;
+	margin-left: 1em;
+	/* margin: auto; */
+}
+
+.content-section .contacto .contacto-form h1 {
+	color: #E30613;
+	font-weight: 700;
+	font-size: 2.3em;
+}
+
+.content-section .contacto .contacto-form p {
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+.content-section .contacto .contacto-form .form-field {
+	display: flex;
+	justify-content: space-between;
+	gap: 4.7em;
+}
+
+.content-section .contacto .contacto-form .form-field div {
+	width: 100%;
+}
+
+.content-section .contacto .contacto-form input {
+	width: 100%;
+	padding: 1.5em;
+	font-size: 1.1em;
+	background: none;
+	margin-block: .7em;
+	border: 1px solid #B5B5B5;
+	outline: none;
+}
+
+.content-section .contacto .contacto-form textarea {
+	outline: none;
+	background: none;
+	border: 1px solid #B5B5B5;
+	padding: 1.5em;
+	font-size: 1.1em;
+	width: 100%;
+	height: 10em;
+	margin-block: .7em;
+	resize: none;
+}
+
+.content-section .contacto .contacto-form button[type="submit"] {
+	background-color: #E30613;
+	border: none;
+	padding-block: 0.8em;
+	padding-inline: 1.8em;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 600;
+	border-radius: 2.4em;
+}
+
+.content-section .contacto .contacto-details {
+	display: flex;
+	margin-bottom: 1em;
+	width: 80%;
+	margin-left: 4em;
+	margin-bottom: 3em;
+}
+
+.content-section .contacto .contacto-details .contact-details-item {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	flex: 1;
+}
+
+.content-section .contacto .contacto-details .contact-details-item .icon {
+	background-color: #E30613;
+	border-radius: 50%;
+	width: 3em;
+	height: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-section .contacto .contacto-details .contact-details-item .item-body {
+	line-height: 1.2;
+}
+
+.content-section .contacto .contacto-details .contact-details-item .item-body h3 {
+	font-weight: 700;
+	font-size: 1.4em;
+}
+
+.content-section .contacto .contacto-details .contact-details-item .item-body p {
+	font-weight: 300;
+	font-size: 1.4em;
 }
 
 .content-section .contacto .contacto-img {
+	grid-column: 2;
+	grid-row: 1 / span 2;
 	border-radius: 1em;
 	overflow: hidden;
 }
@@ -281,4 +380,6 @@
 .content-section .contacto .contacto-img img {
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
+
