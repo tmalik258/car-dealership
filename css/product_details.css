@@ -1,0 +1,231 @@
+/*---------------	Detail Section	 ----------------*/
+.detail-section {
+	display: flex;
+	margin-block: 2em;
+	width: 90%;
+	margin-inline: auto;
+	gap: 3em;
+}
+
+@media screen and (max-width: 1200px) {
+	.detail-section {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.detail-section {
+		gap: 1em;
+	}
+}
+
+/*---------------	Detail Section - Gallery Grid	 ----------------*/
+.detail-section .gallery-grid {
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 4fr 1fr;
+	gap: 1.5em;
+}
+
+.detail-section .gallery-grid .gallery-grid-item:first-child {
+	grid-column: 1 / -1;
+	background-color: blue;
+	max-height: initial;
+}
+
+.detail-section .gallery-grid .gallery-grid-item {
+	max-height: 8em;
+}
+
+.detail-section .gallery-grid .gallery-grid-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+	.detail-section .gallery-grid {
+		gap: 1em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.detail-section .gallery-grid {
+		gap: 0.65em;
+	}
+}
+
+/*---------------	Detail Section - Detail Grid	 ----------------*/
+.detail-section .detail-grid {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.detail-section .detail-grid .reviews {
+	display: flex;
+	align-items: center;
+}
+
+.detail-section .detail-grid .reviews .star-icon {
+	color: #ffa800;
+	font-size: 1.2em;
+}
+
+.detail-section .detail-grid .reviews .star-icon:last-child {
+	margin-right: 1em;
+}
+
+.detail-section .detail-grid .price-btn {
+	background-color: #E30613;
+	color: white;
+	font-weight: 600;
+	font-size: 2.5em;
+	width: max-content;
+	padding-inline: 1em;
+	padding-block: 0.45em;
+	border-radius: 0.25em;
+	border: none;
+}
+
+.detail-section .detail-grid .detail-title {
+	font-size: 2.7em;
+	font-weight: 600;
+}
+
+.detail-section .detail-grid .detail-description {
+	font-weight: 200;
+	font-size: 1.2em;
+}
+
+.detail-section .detail-grid .detail-specifications {
+	display: flex;
+	flex-direction: column;
+	gap: .3em;
+	background-color: #ececec;
+	list-style: none;
+	padding-inline: 2em;
+	padding-block: 1.45em;
+	font-size: 1.3em;
+	border-radius: 1em;
+}
+
+.detail-section .detail-grid .detail-specifications .bold {
+	font-weight: 600;
+}
+
+.detail-section .detail-grid .detail-characteristics {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1em;
+}
+
+.detail-section .detail-grid .detail-characteristics .detail-characteristics-item {
+	display: flex;
+	gap: 1.4em;
+	align-items: center;
+	border-radius: 2em;
+	background-color: #ececec;
+	padding: 1.5em;
+	font-size: 1.45em;
+}
+
+.detail-section .detail-grid .detail-characteristics .detail-characteristics-item:last-child {
+	background-color: #E30613;
+	color: #fff;
+}
+
+@media screen and (max-width: 1600px) {
+	.detail-section .detail-grid .price-btn {
+		font-size: 2em;
+	}
+
+	.detail-section .detail-grid .detail-title {
+		font-size: 2em;
+	}
+	
+	.detail-section .detail-grid .detail-description {
+		font-size: 1.1em;
+	}
+	
+	.detail-section .detail-grid .detail-specifications {
+		font-size: 1.1em;
+	}
+
+	.detail-section .detail-grid .detail-characteristics .detail-characteristics-item {
+		padding: 1.5em;
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.detail-section .detail-grid .price-btn {
+		font-size: 1.7em;
+	}
+
+	.detail-section .detail-grid .detail-title {
+		font-size: 1.7em;
+	}
+
+	.detail-section .detail-grid .detail-description, .detail-section .detail-grid .detail-specifications, .detail-section .detail-grid .detail-characteristics .detail-characteristics-item {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.detail-section .detail-grid .price-btn {
+		font-size: 1.3em;
+	}
+
+	.detail-section .detail-grid .detail-title {
+		font-size: 1.3em;
+	}
+
+	.detail-section .detail-grid .detail-characteristics {
+		grid-template-columns: 1fr;
+	}
+}
+
+/*---------------	Blog Section	 ----------------*/
+.blog-section {
+	display: flex;
+	gap: 2em;
+	/* padding-inline: 2em; */
+	padding-block: 3em;
+	width: 90%;
+	margin-inline: auto;
+}
+
+.blog-section .blog-item {
+	flex: 1;
+}
+
+.blog-section .blog-item .blog-img {
+	height: 25em;
+}
+
+.blog-section .blog-item .blog-img img {
+	border-radius: 2em;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.blog-section .blog-item .blog-details .blog-title {
+	font-size: 2em;
+	font-weight: 700;
+	margin-block: 0.5em;
+}
+
+.blog-section .blog-item .blog-details .blog-description {
+	font-weight: 300;
+	font-size: 1.3em;
+}
+
+@media screen and (max-width: 992px) {
+	.blog-section {
+		flex-direction: column;
+	}
+}
