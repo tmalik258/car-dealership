@@ -56,23 +56,6 @@
 	}
 }
 
-/* @media screen and (max-width: 500px) {
-	.search {
-		left: 1.15em;
-		margin-top: 3em;
-		margin-bottom: 1em;
-	}
-
-	.search .icon {
-		right: 9%;
-	}
-
-	.search input[type="text"] {
-		outline: none;
-		padding-right: 3.5em;
-	}
-} */
-
 /*--------------------- Search Filter -------------------*/
 .search-filter {
 	display: none;
