@@ -82,46 +82,19 @@
 				<ion-icon name="chevron-back-outline" class="arrow"></ion-icon>
 				<div class="hero-body">
 					<h1 class="hero-heading">Seleccione una marca</h1>
-					<div class="hero-filter">
-						<ul>
-							<li>
-								Selecciona una marca
-								<ion-icon
-									name="chevron-down-outline"
-									class="down-icn"
-								></ion-icon>
-							</li>
-							<li>
-								Selecciona un modelo
-								<ion-icon
-									name="chevron-down-outline"
-									class="down-icn"
-								></ion-icon>
-							</li>
-							<li>
-								Min. Precio
-								<ion-icon
-									name="chevron-down-outline"
-									class="down-icn"
-								></ion-icon>
-							</li>
-							<li>
-								Máx. Precio
-								<ion-icon
-									name="chevron-down-outline"
-									class="down-icn"
-								></ion-icon>
-							</li>
-							<li class="hero-filter-btn">
-								<button>
+					<div class="hero-search">
+						<form onsubmit="false">
+							<input type="text" name="search" placeholder="Search...">
+							<div class="hero-search-btn">
+								<button type="submit">
 									<ion-icon
 										name="search-outline"
 										class="search-icn"
 									></ion-icon
-									>Buscar
+									><span class="search-txt">Buscar</span>
 								</button>
-							</li>
-						</ul>
+							</div>
+						</form>
 					</div>
 					<div class="btns">
 						<button>

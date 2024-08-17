@@ -62,9 +62,10 @@ header {
 	}
 }
 
-/*--------------- Hero Filter ---------------*/
+/*--------------- Hero Search ---------------*/
 
-.hero-filter {
+.hero-search {
+	position: relative;
 	background: radial-gradient(
 		35.67% 267.37% at 50% 50%,
 		#696968 0%,
@@ -81,62 +82,87 @@ header {
 	width: 85%;
 }
 
-.hero-body .hero-filter ul {
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.hero-body .hero-search input[type="text"] {
 	background-color: #fff;
 	color: #000;
-	padding-left: 4em;
-	height: 5em;
+	padding-left: 2em;
+	padding-right: 10em;
+	height: 4em;
 	border-radius: 100px;
-	flex-grow: 1;
-	font-size: 0.7em;
-	color: #575756;
+	border: none;
+	outline: none;
+	width: calc(100% - 12em);
+	font-size: 1em;
 }
 
-.hero-body .hero-filter ul .down-icn {
-	font-size: 0.6em;
+.hero-body .hero-search .hero-search-btn {
+	position: absolute;
+	right: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 4em;
 }
 
-.hero-body .hero-filter ul .hero-filter-btn {
-	flex-basis: 20%;
-	height: 100%;
-}
-
-.hero-body .hero-filter ul .hero-filter-btn button {
+.hero-body .hero-search .hero-search-btn button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .3em;
 	color: #fff;
-	font-size: 1.85em;
+	font-size: 1.5em;
 	font-weight: 400;
 	border-bottom-right-radius: 100px;
 	border-top-right-radius: 100px;
 	background-color: red;
 	width: 100%;
 	height: 100%;
+	padding-left: 0.8em;
+	padding-right: 1em;
 	border: none;
 	cursor: pointer;
 	transition: 0.2s all ease-out;
 }
 
-.hero-body .hero-filter ul .hero-filter-btn button:hover {
+.hero-body .hero-search .hero-search-btn button:hover {
 	background-color: #1e1e20;
 }
 
-.hero-body .hero-filter ul .hero-filter-btn button .search-icn {
-	position: relative;
-	right: 7px;
-	top: 3px;
-}
-
 @media screen and (max-width: 992px) {
-	.hero-body .hero-filter ul {
-		padding-left: 1.5em;
+	.hero-search {
+		background: none;
+		border: none;
+		border-image-source: none;
+		padding: 0;
+		width: 80%;
+	}
+
+	.hero-body .hero-search input[type="text"] {
+		padding-left: 1.2em;
+		padding-right: 8em;
+		height: 2.5em;
+		width: calc(100% - 9.2em);
+	}
+
+	.hero-body .hero-search .hero-search-btn {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 2.5em;
+	}
+
+	.hero-body .hero-search .hero-search-btn button {
+		font-size: 1.2em;
 	}
 }
 
-@media screen and (max-width: 768px) {
-	.hero-filter {
+@media screen and (max-width: 500px) {
+	.hero-body .hero-search input[type="text"] {
+		padding-right: 3.5em;
+		width: calc(100% - 4.7em);
+	}
+
+	.hero-body .hero-search .hero-search-btn button .search-txt {
 		display: none;
 	}
 }
